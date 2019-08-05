@@ -13,6 +13,14 @@
     opacity: 1;
   }
 }
+@keyframes changecolor {
+  from {
+    color: #454A59;
+  }
+  to {
+    color: steelblue;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -210,6 +218,9 @@ p {
   color: #454A59;
   font-size: 1.75rem;
   text-decoration: none;
+}
+#navbar nav a:hover {
+  animation: 1s changecolor;
 }
 footer {
   color: #22283B;
