@@ -21,6 +21,16 @@
     color: steelblue;
   }
 }
+@keyframes invertcolors {
+  from {
+    background: #22283A;
+    color: #F6F7F8;
+  }
+  to {
+    background: #F6F7F8;
+    color: #22283A;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -220,7 +230,7 @@ p {
   text-decoration: none;
 }
 #navbar nav a:hover {
-  animation: 1s changecolor;
+  animation: 1s changecolor forwards;
 }
 footer {
   color: #22283B;
@@ -328,8 +338,7 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background: #F6F7F8;
-  color: #22283A;
+  animation: 1s invertcolors forwards;
 }
 .home .walk .walk-img {
   width: 46%;
