@@ -2,16 +2,20 @@
 @import "mixins";
 
 #navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   background: @nav-bg;
+  opacity: 0.9;
 
   border-bottom: 2px solid @nav-border;
-
-  text-align: center;
 
   h1 {
     padding: 14px 0 19px;
 
     font-size: 4.25rem;
+    text-align: center;
 
     @media @phone {
       width: 100%;
