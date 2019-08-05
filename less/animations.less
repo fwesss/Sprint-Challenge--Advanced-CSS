@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes changecolor {
+  from {
+    color: @nav-font;
+  }
+  to {
+    color: steelblue;
+  }
+}
+
+@keyframes invertcolors {
+  from {
+    .button-colors(@btn-bg-color, @porcelain);
+  }
+  to {
+    .button-colors(@porcelain, @btn-bg-color);
+  }
+}

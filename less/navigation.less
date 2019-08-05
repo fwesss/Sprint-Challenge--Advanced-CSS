@@ -1,1 +1,46 @@
-// Navigation code here
+@import "variables";
+@import "mixins";
+
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: @nav-bg;
+  opacity: 0.9;
+
+  border-bottom: 2px solid @nav-border;
+
+  h1 {
+    padding: 14px 0 19px;
+
+    font-size: 4.25rem;
+    text-align: center;
+
+    @media @phone {
+      width: 100%;
+    }
+  }
+
+  nav {
+    .flex-around();
+
+    width: 40.75%;
+    .center();
+    padding-bottom: 10px;
+
+    @media @phone {
+      width: 82%;
+    }
+
+    a {
+      color: @nav-font;
+      font-size: 1.75rem;
+      text-decoration: none;
+
+      &:hover {
+        animation: 1s changecolor forwards;
+      }
+    }
+  }
+}
