@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .home {
   h2 {
@@ -73,6 +74,16 @@
       }
 
       .btn {
+        .button-colors(@btn-bg-color, @porcelain);
+
+        width: 100px;
+        padding: 10px 0 8px;
+
+        border-radius: 5px;
+
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-align: center;
       }
     }
 
