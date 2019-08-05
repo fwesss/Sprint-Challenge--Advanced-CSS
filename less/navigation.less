@@ -1,3 +1,5 @@
+@import "variables";
+@import "mixins";
 
 #navbar {
   background: @nav-bg;
@@ -13,11 +15,11 @@
   }
 
   nav {
-    display: flex;
-    justify-content: space-around;
+    .flex-around();
 
     width: 40.75%;
-    margin: 0 auto 10px;
+    .center();
+    padding-bottom: 10px;
 
     a {
       color: @nav-font;
